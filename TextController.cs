@@ -63,13 +63,13 @@ private enum States {cell, mirror, sheets_0, lock_0, cell_mirror, lock_1, corrid
 	if (Input.GetKeyDown(KeyCode.R))		{myState = States.cell_mirror;}
 	}
 	void mirror(){
-		text.text = "the dirty old mirror on the wall seems loose.\n\n" +
+		text.text = "The dirty old mirror on the wall seems loose.\n\n" +
 					"Press T to take the mirror, Press R to Return to roaming your cell";
 	if (Input.GetKeyDown(KeyCode.R))		{myState = States.cell;}
 	else if (Input.GetKeyDown(KeyCode.T))		{myState = States.cell_mirror;}
 	}
 	void cell_mirror(){
-		 text.text = "You are still in your cell, and you Still want to escape! there are" +
+		 text.text = "You are still in your cell, and you still want to escape! there are" +
 					 "some dirty sheets on the bed, a mark where the mirror was, " +
 					 "and the pesky door is still there, and firmly locked.\n\n "+
 					"Press S to view Sheets, or L to View Lock" ;
@@ -93,7 +93,7 @@ private enum States {cell, mirror, sheets_0, lock_0, cell_mirror, lock_1, corrid
 	}
 	//this is where they go out side and cant come back
 	void corridor_0(){
-		text.text = "you're out of your cell, but not out of trouble " +
+		text.text = "You're out of your cell, but not out of trouble " +
 					"you are in the corridor, there's a closet and some stairs leading to" +
 					"the courtyard. there's also various detritus on the floor.\n\n" +
 					"press C to view the closet, F to inspect floors, and S to climb the stairs";
